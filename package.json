@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "lint": "eslint \"**/*.{js,jsx,cjs,mjs}\" --config ./.eslintrc.cjs",
     "lint:fix": "eslint \"**/*.{js,jsx,cjs,mjs}\" --fix",
-    "format": "prettier --write . --config ./.prettierrc.cjs"
+    "format": "prettier --check . --config ./.prettierrc.cjs",
+    "format:fix": "prettier --write . --config ./.prettierrc.cjs"
   },
   "dependencies": {
     "react": "^18.2.0",
