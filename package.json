@@ -10,7 +10,8 @@
     "lint": "eslint \"**/*.{js,jsx,cjs,mjs}\" --config ./.eslintrc.cjs",
     "lint:fix": "eslint \"**/*.{js,jsx,cjs,mjs}\" --fix",
     "format": "prettier --check . --config ./.prettierrc.cjs",
-    "format:fix": "prettier --write . --config ./.prettierrc.cjs"
+    "format:fix": "prettier --write . --config ./.prettierrc.cjs",
+    "prepare": "husky install"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -28,7 +29,12 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "husky": ">=6",
+    "lint-staged": ">=10",
     "prettier": "^2.8.4",
     "vite": "^4.1.0"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
   }
 }
