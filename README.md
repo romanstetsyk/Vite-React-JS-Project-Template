@@ -46,3 +46,7 @@ This project template includes a pre-commit hook that will run `prettier` and `e
 
 This project template includes a `.eslintrc.cjs` file for configuring `eslint`, and a `.prettierrc.cjs` file for configuring `prettier`. These can be modified to fit the needs of your project.
 By default `eslint` enforces the [AirBnB Style Guide](https://github.com/airbnb/javascript)
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](./README.md) file for details.
